@@ -1,0 +1,377 @@
+/* Global CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #8A8888;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    color: white;
+    padding: 7px 22px;
+    border-radius: 6px;
+    background-color: #86BE3F;
+    border: none;
+}
+section{
+    padding-top: 5rem;
+}
+section h3{
+    color: black;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.bi{
+    color: #86BE3F;
+}
+
+.primary-text{
+    color: #86BE3F;
+}
+.underlined-heading {
+    color: #363636;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+  
+.underlined-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20px;
+    width: 80px;
+    height: 4px;
+    background-color: #86BE3F;
+  }
+
+/* Navbar CSS */
+.navbar a{
+    text-decoration: none;
+    color: #8A8888;
+}
+.navbar .active{
+    font-weight: 500;
+    color: #86BE3F;
+}
+
+/* Header CSS */
+.header-image{
+    background-image: url(images/wind-mills.png);
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-image .overlay-content h2{
+    font-size: 4rem;
+}
+.header-image .overlay-content p{
+    font-size: 1.3rem;
+}
+
+
+/* User Info Section CSS */
+.user-info{
+    padding-top: 3rem;
+}
+.user-card{
+    background: #F8F8F8;
+    border-radius: 6px;
+    text-align: center;
+    height: 100%;
+}
+.user-card .user-image{
+    margin-top: -5rem;
+}
+.user-card .user-name{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+    padding-top: 1rem;
+}
+
+/* Quote Section */
+section.quote-section .quote{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+    position: relative;
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+section.quote-section .quoter-name{
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #86BE3F;
+    padding-top: 1.5rem;
+}
+section.quote-section .quote::before{
+    content: url(images/left-comma.svg);
+    position: absolute;
+    left: -3rem;
+}
+section.quote-section .quote::after{
+    content: url(images/right-comma.svg);
+    position: absolute;
+    top: 0;
+    right: -4rem;
+}
+
+/* Energy Plants Section CSS */
+.energy-plants-info .energy-plants-images img{
+    position: absolute;
+}
+.energy-plants-info .energy-plants-content .underlined-heading{
+    text-align: start;
+}
+.energy-plants-info .energy-plants-content .underlined-heading::after{
+    left: 0;
+    transform: translate(0);
+}
+.energy-plants-info .energy-plants-images img:nth-child(1){
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.energy-plants-info .energy-plants-images img:nth-child(2){
+    left: 0;
+    top: 0;
+}
+.energy-plants-info .energy-plants-images img:nth-child(3){
+    right: 0;
+    bottom: 0;
+}
+
+/* Points Section CSS */
+section.points-section .points h5{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1E1E1E;
+}
+section.points-section .points p{
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #363636;
+}
+section.points-section .points .icon-border{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid #86BE3F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+section.points-section .points .icon-border .bi{ font-size: 1.5rem; }
+section.points-section .points .text{
+    padding-left: 1rem;
+}
+
+/* Perche Section CSS */
+section.perche-section .perche-card{
+    height: 100%;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+section.perche-section .perche-card .card-lenght{
+    height: 80px;
+    margin: 1rem;
+}
+section.perche-section .perche-card h3,
+section.cards-panel .card h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+section.perche-section .perche-card p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* Cards Panel CSS */
+section.cards-panel{
+    background: #F9F9F9;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+section.cards-panel .card{
+    height: 100%;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+section.cards-panel .card .card-image{
+    height: 50px;
+}
+
+/* Steps Section CSS */
+section.steps-section{
+    background-image: url(images/intersections.png);
+    background-size: cover;
+    padding: 8rem 0;
+    background-position: center;
+}
+section.steps-section .card-boundary{ height: 100%; border: 1px dashed #86BE3F; padding: 1rem; }
+section.steps-section .step-card{
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ section.steps-section .step-card h3{
+    font-weight: 500;
+    font-size: 1rem;
+ }
+ section.steps-section .step-card .step-card-image{ height: 50px; margin: 1.5rem 0 .5rem 0; }
+ section.steps-section .step-card p{ color: #666666; margin-bottom: 0; }
+
+ /* FAQ Section CSS */
+ section.faqs .static-collapse{
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: .8rem 1.5rem;
+ }
+ section.faqs .static-collapse .d-flex p{
+    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #363636;
+    padding-left: 1.7rem;
+ }
+ section.faqs .static-collapse .d-flex .bi{
+    color: #363636;
+    font-size: 1.5rem;
+    font-weight: 600;
+ }
+ section.faqs .static-collapse .collapse-content{
+    color: #54595F;
+    padding-top: .7rem;
+ }
+
+ /* Contact Us Section CSS */
+ section.contact-us-section .contact-info,
+ section.contact-us-section .contact-form{
+    border: 1px solid #DEDEDE;
+    border-radius: 9px;
+    padding: 1.5rem 1.2rem;
+    height: 100%;
+ }
+ section.contact-us-section .contact-info .bi{
+    font-size: 1.5rem;
+ }
+ section.contact-us-section .contact-info span{
+    color: #666666;
+    font-size: 1rem;
+ }
+
+ input, textarea{
+    border: 1px solid #DEDEDE;
+    outline: none;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+ }
+ input::placeholder, textarea::placeholder{
+    color: #999999;
+ }
+
+ /* Newsletter Section CSS */
+ section.newsletter-section{
+    background-image: url(images/green-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+ }
+ section.newsletter-section .subscribe-part h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+ }
+ section.newsletter-section .subscribe-part{ font-size: 1rem; }
+ section.newsletter-section .send-email-field input{
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+ }
+ section.newsletter-section .send-email-field span{ 
+    border-radius: 50%;
+    height: 40px; 
+    width: 40px;
+    margin: 10px;
+    background: #86BE3F;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ /* Footer CSS */
+ footer {
+    padding-top: 5rem;
+    background-color: #4D4D4D;
+ }
+ footer a{
+    color: white;
+    text-decoration: underline;
+ }
+ footer .brand-info .frey-logos img{
+    height: 33px;
+    width: auto;
+ }
+ footer h5{
+    font-weight: 600;
+    padding-bottom: 1.25rem;
+ }
+ footer ul li{
+    padding-bottom: 1rem;
+ }
+ footer .quick-links, footer .useful-links{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ footer .contact-info .bi{ color: white; font-size: 1.2rem; }
+footer .copyright-footer .social-links .social-icon{
+    width: 35px;
+}
+
+/* Responsive CSS */
+@media (max-width: 576px) {
+    section.quote-section .quote{ width: 90%; }
+    .header-image .overlay-content h2{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 768px) {
+    .header-image .overlay-content h2{
+        font-size: 3.5rem;
+    }
+    .header-image .overlay-content p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 992px) {
+    .gap-md-8 {
+        gap: 8rem!important;
+    }
+    section.quote-section .quote::before,
+    section.quote-section .quote::after { content: '' }
+    footer .quick-links, footer .useful-links{ justify-content: start; }
+ }
